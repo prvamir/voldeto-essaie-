@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>VOLDETO</title>
+    <link rel="shortcut icon"  href="image/V.jpg">
+    <style>
+      *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    font-family: 'Oswald', sans-serif;
+    overflow-x: hidden;
+    color: #42424A;
+}
+header{
+  position: fixed;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+padding: 0 150px;
+border-bottom: 1px solid #dbdbdb;
+background: #ffffff;
+}
+header ul li{
+display: inline-block;
+list-style: none;
+margin: 0 30px;
+}
+header ul li:last-child{
+margin-right: 0;
+}
+header ul li a{
+text-decoration: none;
+color: #42424a;
+padding: 22px 0;
+display: inline-block;
+transition: all ease 0.3s;
+font-size: 18px;
+}
+header ul li a:hover{
+color: #181818;
+}
+
+/* submenu style */
+header ul .submenu{
+position: absolute;
+width: 200px;
+background-color: #ffffff;
+box-shadow: 0 20px 45px #00000020;
+margin-top: -50px;
+opacity: 0;
+z-index: -999;
+transition: all ease 0.5s;
+}
+header ul li:hover .submenu{
+z-index: 99;
+opacity: 1;
+margin-top: 0;
+}
+header ul .submenu li{
+margin: 0;
+width: 100%;
+} 
+header ul .submenu li a{
+padding: 15px 20px;
+display: inline-block;
+width: 100%;
+}
+
+.hero_sec{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+a {
+  background-image: linear-gradient(
+    to right,
+    #000000,/*#54b3d6;*/
+    #000000 50%,/*#54b3d6;*/
+    #000 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+a:before {
+  content: '';
+  background: #000000; /*#54b3d6;*/
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+ background-position: 0;
+}
+
+a:hover::before {
+  width:100%;
+}
+
+    </style>
+</head>
+<body>
+<!-- nav-bar -->
+
+
+<main>
+  <header>
+      <div class="logo">
+          <a href="index.html"><img src="image/logo.jpg" alt=""></a>
+      </div>
+      <nav>
+          <ul>
+              <li><a href="Vétement.html">Prêt-à-porter</a>
+                  <ul class="submenu">
+                      <li><a class="a" href="costume.html">Costume<i class='bx bx-chevron-right'></i></a></li>
+                      <li><a class="a" href="#">Blazer<i class='bx bx-chevron-right'></i></a></li>
+                      <li><a class="a" href="pantalon.html">Pantalon<i class='bx bx-chevron-right'></i></a></li>
+                  </ul> 
+              </li>
+              <li><a href="Découvrir.html">Découvrir</a>
+                  <ul class="submenu">
+                      <li><a class="a" href="aboutus.html">About Us<i class='bx bx-chevron-right'></i></a></li>
+                      <li><a class="a" href="inspiration.html">inspiration<i class='bx bx-chevron-right'></i></a></li>
+                      <li><a class="a" href="CC.html">Comment Commander ?<i class='bx bx-chevron-right'></i></a></li>
+                  </ul>
+              </li>
+          </ul>
+      </nav>
+  </header>
+  <!---
+  <section class="hero_sec">
+      <img src="images/herobg.png" alt="">
+  </section>-->
+</main>
+
+
+ 
+<br><br>
+
+
+<div class="txt">
+    <h2>Blazers</h2>
+</div>
+
+   
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- footer-section -->
+<section class="contact">
+  <div class="contact-info">
+    <div class="firstinfo">
+      <img src="image/logo.png" alt="">
+
+      <p>3245 Grant Street longview, <br>TX united kingdom 765378</p>
+      <p>0123456789</p>
+      <p>contact@gmail.com</p>
+
+      <div class="social-icon">
+        <a href=""><i class='bx bxl-facebook'></i></a>
+        <a href=""><i class='bx bxl-twitter'></i></a>
+        <a href=""><i class='bx bxl-instagram'></i></a>
+        <a href=""><i class='bx bxl-linkedin'></i></a>
+        <a href=""><i class='bx bxl-gmail'></i></a>
+      </div>
+    </div>
+    <div class="second-info">
+      <h4>Support</h4>
+      <p>Contact</p>
+      <p>About  page</p>
+      <p>Size Guide</p>
+      <p>Shopping & Resturns</p>
+      <p>Privacy</p>
+
+    </div>
+    <div class="third-info">
+      <h4>Shop</h4>
+      <p>Multivitamins</p>
+      <p>Herbal Supplements</p>
+      <p>Sports Nutrition</p>
+      <p>Garden of Life</p>
+      <p>Discount</p>
+    </div>
+
+    <div class="fourth-info">
+      <h4>Company</h4>
+      <p>About</p>
+      <p>Blog</p>
+      <p>Affiliate</p>
+      <p>Login</p>
+    </div>
+    <div class="five">
+      <h4>Subscribe</h4>
+      <p>To see our new drops </p>
+      <p>Be daily with us</p>
+      <p></p>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+    <div class="footer-left">
+      <p>Copyright &copy; 2023.All Rights Reserved. Designed By Silent Wahid.</p>
+    </div>
+    <div class="footer-right">
+      <ul>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Shipping Policy</a></li>
+        <li><a href="#">Return Policy</a></li>
+      </ul>
+    </div>
+  </footer>
+  
+
+
+ 
+<script src="main.js"></script>
+<!---->
+</body>
+</html>
